@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat với AI - Japanese Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('home') }}" class="back-button">← Quay lại</a>
+    
+    <div class="chat-container">
+        <h1>Chat với AI</h1>
+        <div class="chat-box" id="chatBox">
+            <div class="message ai">
+                <div class="message-content">
+                    こんにちは！
+                </div>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" class="message-input" id="messageInput" 
+                   placeholder="Nhập tin nhắn của bạn..." 
+                   onkeypress="if(event.key === 'Enter') sendMessage()">
+            <button class="send-button" id="sendButton" onclick="sendMessage()">Gửi</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

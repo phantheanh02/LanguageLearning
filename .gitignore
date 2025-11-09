@@ -1,0 +1,86 @@
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+*.cover
+
+# Flask instance folder
+instance/
+
+# dotenv
+.env
+.env.*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.ropeproject/
+.project
+
+# VS/Windows
+.vs/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Logs and databases
+*.log
+logs/
+*.sqlite3
+
+# MyPy / pyright
+.mypy_cache/
+.pyre/
+
+# Python environment
+env/
+venv/
+ENV/
+.env/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Misc
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Node (if used for front-end assets)
+node_modules/
+
+# Ignore wheel and egg build dirs
+*.egg-info/
+
+# Keep libs/ if intentionally included (e.g. libs/ffmpeg) — do NOT ignore the whole libs/ directory by default.
+libs/

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Japanese Learning App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Japanese Learning App</h1>
+        
+        <div class="feature-buttons">
+            <a href="{{ url_for('chat') }}" class="feature-button">
+                <img src="{{ url_for('static', filename='icons/icon_chat.png') }}" alt="Chat Icon">
+                Chat với AI
+            </a>
+            
+            <a href="{{ url_for('speech') }}" class="feature-button">
+                <img src="{{ url_for('static', filename='icons/icon_speech.png') }}" alt="Microphone Icon">
+                Luyện nói
+            </a>
+        </div>
+    </div>
+</body>
+</html>
